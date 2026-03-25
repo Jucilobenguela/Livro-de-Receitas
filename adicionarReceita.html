@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Adicionar Receita</h1>
+    <a href="index.html">Voltar</a>
+  </header>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Informações da Receita</legend>
+        <label for="nome">Nome da Receita:</label>
+        <input type="text" name="nome" required>
+        <label for="imagem">Imagem:</label>
+        <input type="file" name="imagem" accept="image/*">
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" required></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Tempo de Preparação</legend>
+        <label for="tempoPreparacao">Tempo de Preparação:</label>
+        <input type="text" name="tempoPreparacao" required>
+      </fieldset>
+      <fieldset>
+        <legend>Tempo de Confeção</legend>
+        <label for="tempoConfeccao">Tempo de Confeção:</label>
+        <input type="text" name="tempoConfeccao" required>
+        <label for="numeroDoses">Número de Doses:</label>
+        <input type="number" name="numeroDoses" required>
+        <label for="nivelDificuldade">Nível de Dificuldade:</label>
+        <select id="nivelDificuldade" name="nivelDificuldade" required>
+          <option value="">Selecione...</option>
+          <option value="facil">Fácil</option>
+          <option value="medio">Médio</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <textarea name="ingredientes"></textarea>
+        <textarea name="modosPreparacao" placeholder="Modos de Preparação"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="calorias">Calorias (kcal):</label>
+        <input type="text" name="calorias">
+        <label for="proteinas">Proteínas (g):</label>
+        <input type="text" name="proteinas">
+        <label for="hidratos">Hidratos de Carbono (g):</label>
+        <input type="text" name="hidratos">
+        <label for="gorduras">Gorduras (g):</label>
+        <input type="text" name="gorduras">
+        <label for="fibra">Fibra (g):</label>
+        <input type="text" name="fibra">
+        <label for="acucar">Açúcar (g):</label>
+        <input type="text" name="acucar">
+      </fieldset>
+
+      <button type="submit">Adicionar Receita</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
