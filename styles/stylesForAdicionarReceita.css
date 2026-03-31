@@ -1,0 +1,63 @@
+.adicionar-receita-container {
+  max-width: 800px;
+  margin:  2rem auto;
+  padding: 2rem;
+}
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+}
+legend {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+
+  transition: border 0.2s;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #ff6347;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #e5533d;
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Adicionar Receita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/stylesForAdicionarReceita.css" />
+  <link rel="stylesheet" href="../styles/stylesGlobal.css">
+</head>
+
+<body>
+  <header>
+    <h1>Adicionar Nova Receita</h1>
+    <a href="index.html">⬅ Voltar</a>
+  </header>
+
+  <main class="adicionar-receita-container">
+    <form>
+      <fieldset>
+        <legend>Informações Básicas</legend>
+
+        <label>Nome:
+          <input type="text" required /> </label><br />
+
+        <label>Imagem (URL):
+          <input type="url" required /> </label><br />
+
+        <label>Descrição:
+          <textarea required></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalhes</legend>
+
+        <label>Tempo Preparação:
+          <input type="number" required /> </label><br />
+
+        <label>Tempo Confeção:
+          <input type="number" required /> </label><br />
+
+        <label>Doses:
+          <input type="number" required /> </label><br />
+
+        <label>Dificuldade:
+          <select required>
+            <option value="">Escolher</option>
+            <option>Fácil</option>
+            <option>Médio</option>
+            <option>Difícil</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ingredientes e Preparação</legend>
+
+        <label>Ingredientes:
+          <textarea required></textarea></label><br />
+
+        <label>Modo de Preparação:
+          <textarea required></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informação Nutricional</legend>
+
+        <label>Calorias:
+          <input type="number" /> </label><br />
+
+        <label>Proteínas:
+          <input type="number" /> </label><br />
+
+        <label>Hidratos:
+          <input type="number" /> </label><br />
+
+        <label>Gorduras:
+          <input type="number" /> </label><br />
+
+        <label>Fibra:
+          <input type="number" /> </label><br />
+
+        <label>Açúcar:
+          <input type="number" />
+        </label>
+      </fieldset>
+
+      <button type="submit">Guardar Receita</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 O Meu Livro de Receitas</p>
+  </footer>
+</body>
+
+</html>
